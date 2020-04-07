@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
-import "./Food.css";
+import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
+import './Food.css';
 class Food extends Component {
-  render() {
+  render () {
     const name = this.props.match.params.name;
     const url = `https://source.unsplash.com/1600x900/?${name}`;
     return (

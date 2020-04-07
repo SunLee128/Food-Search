@@ -1,17 +1,17 @@
-import React, { Component } from "react";
-import Food from "./Food";
-import Meal from "./Meal";
-import Navbar from "./Navbar";
-import FoodSearch from "./FoodSearch";
-import { Route, Switch } from "react-router-dom";
-import "./App.css";
+import React, { Component } from 'react';
+import Food from './Food';
+import Meal from './Meal';
+import Navbar from './Navbar';
+import FoodSearch from './FoodSearch';
+import { Route, Switch } from 'react-router-dom';
+import './App.css';
 
 class App extends Component {
-  render() {
+  render () {
     return (
       <div className='App'>
         {/* THIS VERSION USING COMPONENT WORKS AND IS SIMPLER */}
-        {/* BUT IT WILL NOT WORK IF YOU NEED TO PASS ADDITIONAL PROPS*/}
+        {/* BUT IT WILL NOT WORK IF YOU NEED TO PASS ADDITIONAL PROPS */}
         {/* <Route exact path='/food/:name' scomponent={Food} /> */}
 
         {/* THIS VERSION USING RENDER IS LESS CLEAN BUT MORE EXPLICIT */}

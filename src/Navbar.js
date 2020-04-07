@@ -1,18 +1,19 @@
-import React, { Component } from "react";
-import { withRouter } from "react-router-dom";
-import "./Navbar.css";
+import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
+import './Navbar.css';
 
 class Navbar extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
     this.handleLogin = this.handleLogin.bind(this);
   }
-  handleLogin() {
-    alert("LOGGED YOU IN!");
-    this.props.history.push("/food/salmon");
+
+  handleLogin () {
+    alert('LOGGED YOU IN!');
+    this.props.history.push('/food/salmon');
   }
 
-  render() {
+  render () {
     return (
       <div className='Navbar'>
         <button onClick={this.handleLogin}>Log In</button>
